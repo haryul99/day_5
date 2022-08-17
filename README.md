@@ -16,7 +16,7 @@ Vo.java 파일
 
 QueyMap.java 파일
 
-![image](https://user-images.githubusercontent.com/95902842/185066521-d4272db6-d855-4bf5-9ce6-f036ecd15c4e.png)
+![image](https://user-images.githubusercontent.com/95902842/185069906-1437417c-3754-4a5d-8e70-123a79cffd50.png)
 
 전체 출력, name에 맞는 값 출력, insert 함수 구현
 
