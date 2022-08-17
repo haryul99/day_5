@@ -4,7 +4,8 @@ day5-jdbc code repository
 ## 수행결과 및 코드
 
 데이터 추가 조회 아이디로 조회 
-![image](https://user-images.githubusercontent.com/95902842/185066054-a6595ef5-6bf2-49a2-9220-8e90a57c1588.png)
+
+![image](https://user-images.githubusercontent.com/95902842/185073021-e594a87a-1244-448c-bd33-ea76893306b9.png)
 
 ## 프로젝트 구성
 
@@ -114,7 +115,7 @@ public class TestCr {
 	    				_tvo.SetId(rsRs.getString(1)); // ID
 	    				_tvo.SetName(rsRs.getString(2)); // NAME
 	    				_tvo.SetBirthday(rsRs.getString(3)); // INSERTDATE
-	    				_tvo.SetDeleteha(rsRs.getString(5)); // DELETEYN
+	    				_tvo.SetDeleteha(rsRs.getString(4)); // DELETEYN
 	    				
 	    				arr.add(_tvo);
 	    			} 
@@ -164,7 +165,7 @@ public class TestCr {
 	    				_tvo.SetId(rsRs.getString(1)); // ID
 	    				_tvo.SetName(rsRs.getString(2)); // NAME
 	    				_tvo.SetBirthday(rsRs.getString(3)); // INSERTDATE
-	    				_tvo.SetDeleteha(rsRs.getString(5)); // DELETEYN
+	    				_tvo.SetDeleteha(rsRs.getString(4)); // DELETEYN
 	    				
 	    				arr.add(_tvo);
 	    			} 
@@ -230,9 +231,9 @@ public class TestCr {
 						
 						arr= ts1.testSelectAll();
 						
-						if(arr!=null&&arr.size()>0){
+						if(arr!=null && arr.size()>0){
 							System.out.print("ID : NAME : BIRTHDAY : DELETEYN \n");
-							for (int i=0; i<arr.size(); i++){
+							for (int i=0 ; i < arr.size() ; i++){
 								Vo _tvo=arr.get(i);
 								_tvo.PrintVo(_tvo);
 							}
@@ -253,9 +254,9 @@ public class TestCr {
 						
 						arr1= ts11.testSelect(id);
 						
-						if(arr1!=null&&arr1.size()>0){
+						if(arr1 != null && arr1.size() > 0){
 							System.out.print("ID : NAME : BIRTHDAY : DELETEYN \n");
-							for (int i=0; i<arr1.size(); i++){
+							for (int i=0 ; i<arr1.size() ; i++){
 								Vo _tvo=arr1.get(i);
 								_tvo.PrintVo(_tvo);
 							}
